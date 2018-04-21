@@ -25,7 +25,7 @@ public class Driver {
 
 	public void PrintCars() {
 		for (Car car : cars) {
-			car.toString();
+			System.out.println(car.toString());
 		}
 	}
 }

@@ -1,0 +1,28 @@
+package jmv;
+
+import java.util.Scanner;
+
+public class TwentySixMarch {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String arr = "dsds"; // scanner.nextLine().split("\\s+");
+//		int numberP = scanner.nextInt();
+//		int[] numbers= 
+//
+//		int evenNumbers = 0;
+//		int slowerP = 0;
+//		for (int number : numbers) {
+//			if ((number & 1) == 0) {
+//				evenNumbers++;
+//			} else if (number < numberP) {
+//				slowerP++;
+//			}
+//		}
+//
+//		String output = String.format("Even numbers count: %d\nSlower than P= %d numbers count: %d", evenNumbers,
+//				numberP, slowerP);
+//		System.out.println(output);
+		System.out.println(arr.toString());
+	}
+
+}

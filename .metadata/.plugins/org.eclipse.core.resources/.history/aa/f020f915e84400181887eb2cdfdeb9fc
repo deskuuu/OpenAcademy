@@ -1,0 +1,25 @@
+package jmv;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class TwentySixMarch {
+	public static void main(String[] args) {
+		int[] arr = new int[] {12,32,45,6,7,87,9,12,5};
+		int NumberP=20;
+		
+		int evenNumbers=0;
+		int slowerP=0;
+		for(int number :arr){
+			if((number& 1) == 0){
+				evenNumbers++;
+			}
+			else if(number < NumberP) {
+				slowerP++;
+			}
+		}
+		
+		System.out.println("$Even numbers count: {evenNumbers}\nSlower than P=20 numbers count:{slowerP}");
+	}
+
+}

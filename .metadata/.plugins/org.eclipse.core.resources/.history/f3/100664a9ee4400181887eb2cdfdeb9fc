@@ -1,0 +1,23 @@
+package jmv;
+
+import java.util.Scanner;
+
+public class twentySecond {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int from = scanner.nextInt();
+		int to = scanner.nextInt();
+
+		int counter = from;
+		int sum = 0;
+		while (counter <= to) {
+			if (counter % 6 == 0) {
+				sum += counter;
+			}
+
+			counter++;
+		}
+		
+		System.out.println("The sum from the interval [${from};${to}] is ${sum}");
+	}
+}

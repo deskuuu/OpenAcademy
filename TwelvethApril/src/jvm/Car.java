@@ -1,0 +1,52 @@
+package jvm;
+
+public class Car {
+
+	private String brand;
+	private String model;
+	private String year;
+	private Integer price;
+
+	public Car(String brand, String model, String year, Integer price){
+		setBrand(brand);
+		setModel(model);
+		setYear(year);
+		setPrice(price);
+	}
+
+	public void setBrand(String brand){
+		//if (brand.isEmpty() || !(brand instanceof String)) {
+			this.brand = brand;
+		//} else {
+			//throw new Exception();
+		//}
+	}
+
+	private void setModel(String model){
+		if (brand instanceof String) {
+			this.model = model;
+		} else {
+			//throw new Exception();
+		}
+	}
+
+	private void setYear(String year) {
+		if (brand instanceof String) {
+			this.year = year;
+		} else {
+			//throw new Exception();
+		}
+	}
+
+	private void setPrice(Integer price){
+		if (price > 0) {
+			this.price = price;
+		} else {
+			//throw new Exception();
+		}
+	}
+
+	public String toString() {
+		return String.format("Brand: " + brand + " Model: " + model + " Year: " + year + "Price: " + price);
+	}
+}

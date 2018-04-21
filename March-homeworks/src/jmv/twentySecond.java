@@ -1,0 +1,40 @@
+package jmv;
+
+import java.util.Scanner;
+
+public class twentySecond {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int from = scanner.nextInt();
+		int to = scanner.nextInt();
+
+		int counter = from;
+		int sum = 0;
+		while (counter <= to) {
+			if (counter % 6 == 0) {
+				sum += counter;
+			}
+
+			counter++;
+		}
+
+		System.out.println(String.format("The sum from the interval [%d;%d] is %d", from, to, sum));
+
+		// Minimal from 3 numbers
+		int a = 16;
+		int b = 5;
+		int c = 4;
+		int min = a;
+		// int minFirst = Math.min(a, b);
+		// int min= Math.min(minFirst, c);
+
+		if (min > b) {
+			min = b;
+		}
+		if (min > c) {
+			min = c;
+		}
+
+		System.out.println("Min number is " + min);
+	}
+}
